@@ -1,5 +1,7 @@
 package com.qa.main;
 
+import com.qa.main.paramater.PrintName;
+
 // 'Ctrl + /' it makes this line into a comment 
 // This text isn't read by Java, its just description
 
@@ -23,15 +25,29 @@ public class Main {
 		
 		// Java - Returns 
 		returnText(); // Saving a value "Hello Class!"
-		System.out.println(returnText()); // returnText() = "hello class!" 
+//		System.out.println(returnText()); // returnText() = "hello class!" 
 		
 		// Running a method from a different class
 		// Write down the name of the class
 		// followed by .nameOfMethod()
-		PrintClass.sayHello();
+//		PrintClass.sayHello();
 		
 		// Print out the colour red using printRed()
-		System.out.println(OtherClass.printRed());
+//		System.out.println(OtherClass.printRed());
+//		
+//		System.out.println(Colours.blue());
+//		System.out.println(Shapes.square());
+		// String concatenation 
+//		System.out.println(Colours.red() + " " + Shapes.circle());
+		
+//		System.out.println("*****************");
+//		System.out.println(DataTypes.floatExample());
+//		System.out.println(DataTypes.forceReturn());
+//		System.out.println("__________________");
+//		System.out.println(DataTypes.forceCasting());
+		
+		System.out.println(PrintName.returnGreeting("Pip"));
+		System.out.println(PrintName.returnGreeting("Reece"));
 	}
 	
 	// Make a new method called helloWorld that does the same thing as my main 
