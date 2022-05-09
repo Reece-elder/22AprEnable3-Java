@@ -25,6 +25,13 @@ public class Main {
 		returnText(); // Saving a value "Hello Class!"
 		System.out.println(returnText()); // returnText() = "hello class!" 
 		
+		// Running a method from a different class
+		// Write down the name of the class
+		// followed by .nameOfMethod()
+		PrintClass.sayHello();
+		
+		// Print out the colour red using printRed()
+		System.out.println(OtherClass.printRed());
 	}
 	
 	// Make a new method called helloWorld that does the same thing as my main 
