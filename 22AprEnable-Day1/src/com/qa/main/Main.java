@@ -12,9 +12,22 @@ public class Main {
 		// Anything we want our code to do, must go inbetween the {}
 		
 		// System.out.println("some text"); -> print out to the console whatever text we put in
-		System.out.println("Hello 22AprEnable3!");
-		System.out.println("Hello World.");
 		
+		// System.out.println("Hello 22AprEnable3!");
+		// System.out.println("Hello World.");
+		
+		// If I want to create a 'method' that my main method runs I must create the method separately 
+		// Write the name of the method you want to run ()
+		printMessages();
+	}
+	
+	// Make a new method called helloWorld that does the same thing as my main 
+	// 'public static void' - magic words that make the method work
+	// nameOfMethod() - lowerCamelCase + empty () 
+	public static void printMessages() {
+		// syso 'ctrl + space' -> Auto complete my System.out.println();
+		System.out.println("Hello 22AprEnable3!");
+		System.out.println("Hello world!");
 	}
 	
 }
