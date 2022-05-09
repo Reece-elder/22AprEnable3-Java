@@ -18,7 +18,13 @@ public class Main {
 		
 		// If I want to create a 'method' that my main method runs I must create the method separately 
 		// Write the name of the method you want to run ()
-		printMessages();
+//		printMessages();
+//		method1();
+		
+		// Java - Returns 
+		returnText(); // Saving a value "Hello Class!"
+		System.out.println(returnText()); // returnText() = "hello class!" 
+		
 	}
 	
 	// Make a new method called helloWorld that does the same thing as my main 
@@ -28,6 +34,29 @@ public class Main {
 		// syso 'ctrl + space' -> Auto complete my System.out.println();
 		System.out.println("Hello 22AprEnable3!");
 		System.out.println("Hello world!");
+	}
+	
+	// For the hello world exercise
+	
+	public static void method1() {
+		// To make method1 run method2? 
+		System.out.println("Method 1 running!");
+		method2();
+	}
+	
+	public static void method2() {
+		// not returning, just printing to the console
+		System.out.println("Method 2 running!");
+	}
+	
+	
+	// Java - Returns 
+	// method to return some text
+	// void - Don't return anything, if you want to return specify what data type 
+	// String = text 
+	public static String returnText() {
+		// return "what I want to return";
+		return "hello class!";
 	}
 	
 }
