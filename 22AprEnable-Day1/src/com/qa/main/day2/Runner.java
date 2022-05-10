@@ -2,7 +2,9 @@ package com.qa.main.day2;
 
 import com.qa.main.day2.conditionals.BiggerDemo;
 import com.qa.main.day2.conditionals.Calc;
+import com.qa.main.day2.conditionals.CommunityExer;
 import com.qa.main.day2.conditionals.Demo;
+import com.qa.main.day2.iteration.IterationDemo;
 import com.qa.main.day2.paramater.BasicCalculator;
 
 public class Runner {
@@ -25,7 +27,13 @@ public class Runner {
 //		Demo.nestingIfElse();
 //		Calc.oddEven(638263291);
 //		System.out.println(Calc.subSum(33, 3));
-		BiggerDemo.complexIfElse(9, "purple");
+//		BiggerDemo.complexIfElse(9, "purple");
+//		System.out.println(CommunityExer.fizzBuzz(15));
+//		System.out.println(CommunityExer.fizzBuzz(9));
+//		System.out.println(CommunityExer.fizzBuzz(10));
+//		System.out.println(CommunityExer.fizzBuzz(4));
+		IterationDemo.whileDemo();
+		IterationDemo.doWhileDemo();
 		
 	}
 
