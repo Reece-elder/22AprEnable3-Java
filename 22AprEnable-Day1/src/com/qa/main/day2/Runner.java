@@ -1,5 +1,7 @@
 package com.qa.main.day2;
 
+import com.qa.main.day2.conditionals.BiggerDemo;
+import com.qa.main.day2.conditionals.Calc;
 import com.qa.main.day2.conditionals.Demo;
 import com.qa.main.day2.paramater.BasicCalculator;
 
@@ -19,8 +21,12 @@ public class Runner {
 //		System.out.println(BasicCalculator.addThreeNums(2, 3, 4));
 //		System.out.println(BasicCalculator.raisePower(3, 4));
 
-		Demo.basicExample();
-		Demo.nestingIfElse();
+//		Demo.basicExample();
+//		Demo.nestingIfElse();
+//		Calc.oddEven(638263291);
+//		System.out.println(Calc.subSum(33, 3));
+		BiggerDemo.complexIfElse(9, "purple");
+		
 	}
 
 }
