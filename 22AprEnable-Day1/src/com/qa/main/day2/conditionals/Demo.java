@@ -56,5 +56,10 @@ public class Demo {
 		}
 		
 	}
+	
+	// Exercise - Either changing the old calculator code or making new methods add if else statements for the following:
+	// subtract - if the result will be negative print out "You can't subtract that"
+	// divide   - If the user tries to divide by 0 print out "You can't divide by 0"
+	// multiply - if the user tries to multiply by 10 say "thats too easy to use a calculator for"
 
 }
