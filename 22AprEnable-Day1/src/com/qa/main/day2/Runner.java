@@ -10,7 +10,13 @@ public class Runner {
 		
 		// Calculator stuff 
 		System.out.println(BasicCalculator.addSum(4, 5));
+		System.out.println(BasicCalculator.subSum(19, 7));
+		System.out.println(BasicCalculator.multiplySum(3, 4));
+		System.out.println(BasicCalculator.divideSum(15f, 2f));
+		System.out.println(BasicCalculator.squareSum(5));
 		
+		System.out.println(BasicCalculator.addThreeNums(2, 3, 4));
+		System.out.println(BasicCalculator.raisePower(3, 4));
 
 	}
 

@@ -40,6 +40,38 @@ public class BasicCalculator {
 	// multiplies two nums
 	// divides two nums 
 	
+	// takes in 3 nums and returns the sum
+	public static String addThreeNums(int x, int y, int z) {
+		int result = x + y + z; 
+		return x + " + " + y + " + " + z + " = " + result ;
+	}
+	
+	public static String subSum(int x, int y) {
+		int result = x - y;
+		return x + " - " + y + " = " + result;
+	}
+	
+	public static int multiplySum(int x, int y) {
+		int result = x * y;
+		return result;
+	}
+	
+	public static float divideSum(float x, float y) {
+		float result = x / y;
+		return result;
+	}
+	
+	public static int squareSum(int x) {
+		int result = x * x;
+		return result;
+	}
+	
+	public static int raisePower(int x, int y) {
+		int result = (int) Math.pow(x, y); // raise x to the power of y
+		// 3, 4 = 3 * 3 * 3 * 3 
+		return result;
+	}
+	
 	
 
 }
