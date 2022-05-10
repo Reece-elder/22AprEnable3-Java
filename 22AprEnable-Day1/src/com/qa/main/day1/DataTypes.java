@@ -1,4 +1,4 @@
-package com.qa.main;
+package com.qa.main.day1;
 
 public class DataTypes {
 	
