@@ -10,7 +10,7 @@ import com.qa.main.day2.paramater.BasicCalculator;
 
 public class Runner {
 
-	public static void main(String[] args) {
+//	public static void main(String[] args) {
 		// for my main method to run returnGreeting()
 //		System.out.println(BasicCalculator.returnGreeting("reece", "morning"));
 		
@@ -37,7 +37,7 @@ public class Runner {
 //		IterationDemo.doWhileDemo();
 //		IterationDemo.forLoopDemo();
 //		Exercises.flowchartExercise();		
-		Exercises.coins(123.50f, 310);
-	}
+//		Exercises.coins(123.50f, 310);
+//	}
 
 }
