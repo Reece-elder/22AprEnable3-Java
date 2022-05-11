@@ -51,6 +51,36 @@ public class ArrayDemo {
 			System.out.println(fruitArray[i]); // Print out the ith value (0, 1, 2, 3, 4, 5)
 		}
 		
+		// Exercise - Create an array that holds 5 colours 
+		// Print out all of the colours in the array with a loop
+		// Use an if statement to print out "My favourite colour" when you get to your favourite colour in the array
+		
+		// Outside of the loop, update 2 of the colours using the index value 
+	}
+	
+	public static void colourExercise() {
+		
+		// Making our colour array
+		String[] colourArray = {"Purple", "Red", "Blue", "TeAl", "Green"};
+		
+		colourArray[4] = "Lime";
+		colourArray[1] = "Maroon";
+		
+		// Length counts from 1, so the final index of an array will always be length - 1 
+		for(int i = 0; i < colourArray.length; i++) {
+			
+			String colourCheck = colourArray[i].toLowerCase();
+			System.out.println(colourCheck);
+			
+			// Use an if statement to check the value and compare 
+			// use String.equals("string to compare") when using if statements 
+			if(colourCheck.equals("teal")) {
+				System.out.println(colourArray[i] + " is my fav colour!");
+			} else {
+				System.out.println(colourArray[i]);
+			}
+			
+		}
 		
 	}
 
