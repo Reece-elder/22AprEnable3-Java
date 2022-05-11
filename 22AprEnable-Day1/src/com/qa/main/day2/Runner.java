@@ -32,8 +32,9 @@ public class Runner {
 //		System.out.println(CommunityExer.fizzBuzz(9));
 //		System.out.println(CommunityExer.fizzBuzz(10));
 //		System.out.println(CommunityExer.fizzBuzz(4));
-		IterationDemo.whileDemo();
-		IterationDemo.doWhileDemo();
+//		IterationDemo.whileDemo();
+//		IterationDemo.doWhileDemo();
+		IterationDemo.forLoopDemo();
 		
 	}
 

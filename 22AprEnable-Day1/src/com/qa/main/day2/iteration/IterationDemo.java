@@ -58,5 +58,51 @@ public class IterationDemo {
 		} while(hoursLeft > 0);
 		
 	}
+	
+	//	moneySpend(300, 23.50f, 40);
+	// Exercise - Create a method that takes in 3 numbers (starting money, expenses, limit)
+	// Use a loop to subtract the expenses from your starting money, 
+    // when your starting money goes underneath your limit, stop the loop and print "STOP SPENDING MONEY!!"
 
+	// for loop 
+	public static void forLoopDemo() {
+		
+		// loops through a block of code for a pre determined amount of time 
+		// - initialisation (the initial value to set our counter) 
+		// - condition (the query we are waiting for to stop the loop)
+		// - command (what our loop is doing)
+		// - iterator (how we are changing our counting value) (i += 1 = 1++) (i-- : increment or decrement by 1)
+
+		
+		// Basic for loop that counts from 1 - 10 
+		for(int i = 0; i <= 10; i++) {
+			System.out.println(i);
+		}
+		
+		// for loop to count down from 10 to 4
+		for(int x = 10; x >= 4; x--) {
+			System.out.println("Current number: " + x);
+		}
+		
+		// ++ / -- they change the value by 1
+		// x += 4
+		
+		for(float j = 7f; j < 234f; j += 13.67f) {
+			System.out.println("Value of J: " + j);
+		}
+		
+		for(int l = 2; l <= 15; l +=2) {
+			// When l = 6, print out something different
+			if(l == 6) {
+				System.out.println("Value of l is 6!!! :D");
+			} else {
+				System.out.println(PrintClass.helloThere(l));
+			}
+		}
+	}
+	
+	// When you know how many times a loop should run - for loop 
+	// When you don't know how many times it should run - while loop 
+	// Use a do while if you need to (need to run the command atleast once) - do while
+	
 }
