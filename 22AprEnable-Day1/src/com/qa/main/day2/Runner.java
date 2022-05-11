@@ -4,6 +4,7 @@ import com.qa.main.day2.conditionals.BiggerDemo;
 import com.qa.main.day2.conditionals.Calc;
 import com.qa.main.day2.conditionals.CommunityExer;
 import com.qa.main.day2.conditionals.Demo;
+import com.qa.main.day2.iteration.Exercises;
 import com.qa.main.day2.iteration.IterationDemo;
 import com.qa.main.day2.paramater.BasicCalculator;
 
@@ -34,8 +35,9 @@ public class Runner {
 //		System.out.println(CommunityExer.fizzBuzz(4));
 //		IterationDemo.whileDemo();
 //		IterationDemo.doWhileDemo();
-		IterationDemo.forLoopDemo();
-		
+//		IterationDemo.forLoopDemo();
+//		Exercises.flowchartExercise();		
+		Exercises.coins(123.50f, 310);
 	}
 
 }
