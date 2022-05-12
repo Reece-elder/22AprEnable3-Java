@@ -17,6 +17,20 @@ public class Runner {
 		// The user goes to a cashpoint and wants to take out £20 
 		user1.setBalance(80); // because the balance is private.. 
 		
+		pizzaExample();
+		
+	}
+	
+	public static void pizzaExample() {
+		Pizza pizza1 = new Pizza("pepperoni", 12, true);
+		
+		// Access the type - getType()
+		System.out.println(pizza1.getType());
+		
+		// Change the size - setSize(value)
+		pizza1.setSize(100);
+		
+		System.out.println(pizza1.getSize());
 	}
 
 
