@@ -4,7 +4,9 @@ public class BiggerDemo {
 	
 	// method doesnt return anything
 	// takes in a boolean called query
-	public static void boolDemo(boolean query) {
+	
+	// To make my old method instanced, just remove the word static 
+	public void boolDemo(boolean query) {
 		
 		// if statement to check if query is true or not
 		if(query == true) { // if() takes in a query and either returns true or false 
@@ -30,7 +32,7 @@ public class BiggerDemo {
 		
 	}
 	
-	public static void complexIfElse(int num, String colour) {
+	public void complexIfElse(int num, String colour) {
 		
 //		int num = 10;
 //		String colour = "red";
