@@ -1,6 +1,8 @@
 package com.qa.main.day4.abstraction;
 
 // Bird is going to be our abstract class, meaning we can't directly create an object of it 
+
+// Abstract classes are a hybrid of regular classes, and complete abstraction 
 public abstract class Bird {
 	
 	// Fields
