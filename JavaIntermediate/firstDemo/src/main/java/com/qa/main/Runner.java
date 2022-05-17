@@ -1,4 +1,4 @@
-package firstDemo.com.qa.main;
+package com.qa.main;
 
 public class Runner {
 	
