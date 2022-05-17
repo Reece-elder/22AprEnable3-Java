@@ -92,5 +92,6 @@ public class BasicCalculatorTest {
 	// Exercise - Go through an existing exercise (iterations, params, conditionals etc) 
 	// Copy and paste the existing methods into your Maven project (make new class) 
 	// Make sure the methods return something, and test them 
+	// Recommendation - Convert old exercise to instanced (remove static) 
 
 }
