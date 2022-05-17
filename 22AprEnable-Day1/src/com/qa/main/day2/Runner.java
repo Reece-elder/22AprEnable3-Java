@@ -39,5 +39,20 @@ public class Runner {
 //		Exercises.flowchartExercise();		
 //		Exercises.coins(123.50f, 310);
 //	}
+	
+	public static void main(String[] args) {
+		
+		// Before I can run the methods from BiggerDemo, I need to make an object
+		BiggerDemo demo = new BiggerDemo();
+		// Running the methods of the OBJECTS
+		demo.boolDemo(true);
+		demo.complexIfElse(7, "red");
+		
+		// BiggerDemo.boolDemo(true); // Won't work, because the methods are instanced
+		
+		// Exercise - Find an old Class / project convert old methods to instanced
+		// Make an object of your class in the runner, and run the new methods 
+		// Suggestion - Convert your Calculator into instanced 
+	}
 
 }
