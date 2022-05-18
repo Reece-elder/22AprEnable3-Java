@@ -17,6 +17,7 @@ public class JDBCRunner {
 		System.out.println(newCafe.getDrinkById(15));
 		System.out.println("*************************************");
 		System.out.println(newCafe.getAllDrinks());
+		System.out.println(newCafe.getDrinksByQuery("type", "'latte'"));
 		newCafe.getDrinkById(10); // gives us a useless id reference
 	}
 
