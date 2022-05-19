@@ -70,7 +70,6 @@ public class PetShop {
 			preStmt.setInt(4, id);
 			preStmt.executeUpdate();
 			return getBirdById(id);
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
