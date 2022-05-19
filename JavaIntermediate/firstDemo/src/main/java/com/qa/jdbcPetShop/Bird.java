@@ -1,5 +1,7 @@
 package com.qa.jdbcPetShop;
 
+import java.util.Random;
+
 public class Bird {
 	
 	// Fields
@@ -24,6 +26,9 @@ public class Bird {
 		this.wingspan = wingspan;
 		this.name = name;
 	}
+	
+	// Methods
+
 	
 	// Getters and Setters
 

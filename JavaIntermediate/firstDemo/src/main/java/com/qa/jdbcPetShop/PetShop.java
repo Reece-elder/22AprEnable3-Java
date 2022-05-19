@@ -10,7 +10,7 @@ public class PetShop {
 	
 	DBConfig db = new DBConfig();
 	
-	Statement stmt = null;
+//	Statement stmt = null;
 	Connection conn = db.connect();
 	
 	// Add Bird to PetShop
