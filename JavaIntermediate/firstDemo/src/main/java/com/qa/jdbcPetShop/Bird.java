@@ -28,6 +28,10 @@ public class Bird {
 	}
 	
 	// Methods
+	public String makeNoise() {
+		String noise = "Cacaw! My name is " + getName();
+		return noise;
+	}
 
 	
 	// Getters and Setters

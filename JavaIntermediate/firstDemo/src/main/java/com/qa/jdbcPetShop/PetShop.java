@@ -76,9 +76,28 @@ public class PetShop {
 		}
 	}
 	
+	// birdNoiseById() -> getBirdByID()
+	// birdNoiseById() -> makeNoise()
+	
+	// Take in an id, find the bird of that id and run the makeNoise method
+	// Doing a Unit test on this method, I am also testing getBirdByID() AND makeNoise()
+	// We need to mock getBirdById() AND makeNoise()
+	public String birdNoiseById(int id) {
+		try {
+			// How can I get a bird object by id? 
+			Bird bird = getBirdById(id);
+			String noise = bird.makeNoise();
+			return noise;
+		} catch(Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
 	
 	public Bird modelBird(ResultSet result) {
 		try { 
+			result.next(); // Cycles through the rows (move down from headers)
 			int id = result.getInt("id"); // get by column number OR column name
 			String featherColour = result.getString("feather_colour"); 
 			// featherColour -> FEATHERCOLOUR (within SQL) FEATHER_COLOUR

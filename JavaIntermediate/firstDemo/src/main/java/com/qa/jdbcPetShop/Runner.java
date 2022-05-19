@@ -16,6 +16,10 @@ public class Runner {
 		
 		System.out.println(paws.addBird(new Bird("Green and Orange", 9, "Katie")));
 		
+//		System.out.println(new Bird("black", 19, "Hades").makeNoise());
+		
+		System.out.println(paws.getBirdById(1));
+		
 
 	}
 

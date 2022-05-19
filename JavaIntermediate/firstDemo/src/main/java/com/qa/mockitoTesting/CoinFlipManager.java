@@ -29,5 +29,19 @@ public class CoinFlipManager {
 		
 		return null;
 	}
+	
+	
+	public String higherLower(int x) {
+		// Make a random number from 0 - 50
+		int randNum = rng.nextInt(51);
+		
+		if(x > randNum) {
+			return "Higher!";
+		} else if (x < randNum) {
+			return "Lower!";
+		} else {
+			return "Same Number..";
+		}
+	}
 
 }
