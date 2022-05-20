@@ -46,6 +46,10 @@ public class Controller {
 	
 	// deleteBird()
 	public boolean deleteBird(int id) {
+		
+		// Something to react when an event is triggered
+		// some method to check the console, and if someone has entered 'Delete'
+		
 		boolean deleted = petShop.deleteBirdById(id);
 		System.out.println("bird of id: " + id + " has been removed :( ");
 		return deleted;

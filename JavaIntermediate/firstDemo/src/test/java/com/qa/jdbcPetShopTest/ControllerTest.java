@@ -79,6 +79,35 @@ public class ControllerTest {
 		Mockito.verify(mockShop, Mockito.times(1)).getBirdById(1);
 		Mockito.verify(mockShop, Mockito.never()).addBird(bird1);		
 		
+	}
+	
+	@Test
+	public void deleteByIDTest() {
+		//Arrange
+		// If my deletion is successful, it will return true
+		Mockito.when(mockShop.deleteBirdById(1)).thenReturn(true);
+		boolean result;
+		
+		// Act 
+		result = controller.deleteBird(1);
+		
+		// Assert
+//		Assertions.assertEquals(true, result);
+		Assertions.assertTrue(result);
+		
+	}
+	
+	@Test
+	public void updateByIDTest() {
+		// Arrange 
+		Mockito.when(mockShop.updateBirdById(1, bird1)).thenReturn(bird1ID);
+		Bird result;
+		
+		// Act 
+		result = controller.updateBird(1, bird1);
+		
+		// Assert
+		Assertions.assertEquals(bird1ID, result);
 		
 	}
 
