@@ -110,5 +110,17 @@ public class ControllerTest {
 		Assertions.assertEquals(bird1ID, result);
 		
 	}
+	
+	@Test
+	public void getAllTest() {
+		
+	}
+	
+	// Test Driven Development
+	// Testing is used to push what code to write 
+	// Create a test (that will fail) 
+	// Write the code to make the test pass
+	// Check if the test passes or not, if it does move on.. else fix the code 
+	
 
 }
