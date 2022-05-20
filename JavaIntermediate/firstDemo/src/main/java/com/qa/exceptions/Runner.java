@@ -9,6 +9,9 @@ public class Runner {
 		System.out.println("Let's see if this prints.. ");
 		demo.twoTypesExceptions();
 		demo.makeNewException();
+		
+		ExceptionsExercise exer = new ExceptionsExercise();
+		System.out.println(exer.divideNums(53, 7));
 	}
 
 }

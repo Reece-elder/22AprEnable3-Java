@@ -1,9 +1,10 @@
-package com.qa.jdbcPetShop;
+package com.qa.jdbcPetShopTwo;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class PetShop {
 	
@@ -14,7 +15,6 @@ public class PetShop {
 	Connection conn = db.connect();
 	
 	// Add Bird to PetShop
-	// Return the bird I just added to the db (so I can check id numbers etc) 
 	public Bird addBird(Bird bird) {
 		try {
 			String query = "INSERT INTO birds(feather_colour, wingspan, name) VALUES(?, ?, ?);";
@@ -25,7 +25,7 @@ public class PetShop {
 			preStmt.executeUpdate(); // run the sql query, adding to the db
 			// executeUpdate() - Changing data: Posting, Updating, Deleting 
 			// executeQuery()  - Getting data: reading (SELECT * FROM) 
-			return readLatest(); // Returns the most recent bird added to the db
+			return readLatest();
 		} catch (Exception e) {
 			// Exceptions are errors in the code
 			// When an error is 'thrown', it is 'caught'
@@ -35,23 +35,6 @@ public class PetShop {
 		
 	}
 	
-	// New method that returns the latest bird added to the database
-	public Bird readLatest() {
-		try {
-			// ORDER BY <column header> orders by that column 
-			// DESC - Orders it Descending (19,18,15,12,10..) 
-			// limit 1 - Only shows the first item
-			String query = "SELECT * FROM birds ORDER BY id DESC limit 1;";
-			PreparedStatement preStmt = conn.prepareStatement(query);
-			ResultSet results = preStmt.executeQuery();
-			return modelBird(results);
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
-	}
-	
 	public Bird getBirdById(int id) {
 		try {
 			String query = "SELECT * FROM birds where id = ?;";
@@ -59,6 +42,36 @@ public class PetShop {
 			preStmt.setInt(1, id);
 			ResultSet results = preStmt.executeQuery();
 			return modelBird(results); // return what modelBird() returns, passing in our resultset
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public Bird readLatest() {
+		try {
+			String query = "SELECT * FROM birds ORDER BY id DESC LIMIT 1;";
+			PreparedStatement preStmt = conn.prepareStatement(query);
+			ResultSet results = preStmt.executeQuery();
+			return modelBird(results);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public ArrayList<Bird> getAllBird(){
+		
+		ArrayList<Bird> data = new ArrayList<>();
+		
+		try {
+			String query = "SELECT * FROM birds;";
+			PreparedStatement preStmt = conn.prepareStatement(query);
+			ResultSet results = preStmt.executeQuery();
+			do {
+				data.add(modelBird(results));
+			} while(results.next());
+			return data;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -100,17 +113,17 @@ public class PetShop {
 	// Take in an id, find the bird of that id and run the makeNoise method
 	// Doing a Unit test on this method, I am also testing getBirdByID() AND makeNoise()
 	// We need to mock getBirdById() AND makeNoise()
-//	public String birdNoiseById(int id) {
-//		try {
-//			// How can I get a bird object by id? 
-//			Bird bird = getBirdById(id);
-//			String noise = bird.makeNoise();
-//			return noise;
-//		} catch(Exception e) {
-//			e.printStackTrace();
-//			return null;
-//		}
-//	}
+	public String birdNoiseById(int id) {
+		try {
+			// How can I get a bird object by id? 
+			Bird bird = getBirdById(id);
+			String noise = bird.makeNoise();
+			return noise;
+		} catch(Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 	
 	
 	public Bird modelBird(ResultSet result) {
