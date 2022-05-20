@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class DBConfig {
 	
 	final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-	final String DB_URL = "jdbc:mysql://localhost:3306/testPetShop";
+	final String DB_URL = "jdbc:mysql://localhost:3306/petShop";
 	final String USER = "root";
 	final String PASSWORD = "root";
 	
